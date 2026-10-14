@@ -1,14 +1,17 @@
 import { Link } from 'react-router-dom'
-import { capabilities, portfolio, services, stats, values } from '../content'
+import { aboutCopy, hero, portfolio, services, stats, whyVictoryMinds } from '../content'
 
 const aboutImg = '/studio-portrait.jpg?v=3'
 
 const heroPills = [
-  { label: 'Cloud Solutions', icon: 'cloud' },
-  { label: 'Software Development', icon: 'code' },
-  { label: 'Data & Analytics', icon: 'data' },
-  { label: 'AI & Automation', icon: 'ai' },
-  { label: 'IT Consulting & Support', icon: 'shield' },
+  { label: 'Product Building', icon: 'code' },
+  { label: 'Product Testing', icon: 'data' },
+  { label: 'Integrations', icon: 'cloud' },
+  { label: 'Implementation', icon: 'shield' },
+  { label: 'Go-to-Market', icon: 'ai' },
+  { label: 'Investors', icon: 'code' },
+  { label: 'Infrastructure', icon: 'cloud' },
+  { label: 'SOC Audits', icon: 'shield' },
 ]
 
 function HeroIcon({ name }) {
@@ -60,25 +63,15 @@ export default function Home() {
   return (
     <>
       <section className="hero-live">
-        <img
-          src="/hero-team.jpg?v=5"
-          width={2560}
-          height={1440}
-          alt=""
-        />
+        <img src="/hero-team.jpg?v=5" width={2560} height={1440} alt="" />
         <div className="hero-live-shade" />
         <div className="wrap">
           <div className="hero-live-copy">
             <h1>
-              Ideas.
-              <br />
-              Technology.
-              <br />
-              <span>Real Impact.</span>
+              We build, test, integrate, and launch products — then help them{' '}
+              <span>win the market.</span>
             </h1>
-            <p>
-              Empowering businesses with innovative IT solutions to build a smarter, brighter future.
-            </p>
+            <p>{hero.subhead}</p>
             <ul className="hero-live-pills">
               {heroPills.map((item) => (
                 <li key={item.label}>
@@ -94,11 +87,11 @@ export default function Home() {
       </section>
       <div className="hero-banner-bar">
         <div className="wrap hero-actions">
-          <Link to="/services" className="btn btn-gold">
-            Our services
+          <Link to="/contact" className="btn btn-gold">
+            {hero.primaryCta}
           </Link>
           <Link to="/contact" className="btn btn-ghost">
-            Get started
+            {hero.secondaryCta}
           </Link>
         </div>
       </div>
@@ -106,22 +99,16 @@ export default function Home() {
       <section className="section">
         <div className="wrap split">
           <div>
-            <p className="eyebrow">Since 2010</p>
-            <h2>A Kavuri Hills IT studio for serious software work.</h2>
-            <p className="muted">
-              Victory Minds is a software and IT services company. We help organisations turn briefs into working
-              applications: discovery, architecture, development, and the months after launch.
-            </p>
-            <p className="muted">
-              Web software, mobile apps, cloud, and ongoing IT services sit in the same house, so a portal, an API, and
-              an application do not become three disconnected vendors.
-            </p>
+            <p className="eyebrow">US and India</p>
+            <h2>Your product, engineering, and go-to-market partner.</h2>
+            <p className="muted">{aboutCopy.short}</p>
+            <p className="muted">{aboutCopy.beyond}</p>
             <Link to="/about" className="btn btn-outline">
               About us
             </Link>
           </div>
           <div className="portrait">
-            <img src={aboutImg} alt="Victory Minds team in a software review" />
+            <img src={aboutImg} alt="Victory Minds team in a product review" />
           </div>
         </div>
       </section>
@@ -129,15 +116,11 @@ export default function Home() {
       <section className="section navy">
         <div className="wrap">
           <div className="section-head">
-            <p className="eyebrow">How we work</p>
-            <h2>Values that show up in the backlog.</h2>
-            <p className="muted">
-              Elegant language is useless if the sprint cannot explain itself. These are the habits we hold when
-              estimates get tight.
-            </p>
+            <p className="eyebrow">Why Victory Minds</p>
+            <h2>Build right. Launch ready. Backed end to end.</h2>
           </div>
-          <div className="grid-3">
-            {values.map((item) => (
+          <div className="grid-2">
+            {whyVictoryMinds.map((item) => (
               <article className="card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p className="muted">{item.body}</p>
@@ -151,7 +134,7 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <p className="eyebrow">Services</p>
-            <h2>Software development and IT services, end to end.</h2>
+            <h2>Eight practices, one accountable partner.</h2>
           </div>
           <div className="grid-3">
             {services.map((item) => (
@@ -170,18 +153,6 @@ export default function Home() {
 
       <section className="section">
         <div className="wrap">
-          <div className="section-head">
-            <p className="eyebrow">Capabilities</p>
-            <h2>What our teams actually deliver.</h2>
-          </div>
-          <div className="grid-3">
-            {capabilities.map((item) => (
-              <article className="card" key={item.title}>
-                <h3>{item.title}</h3>
-                <p className="muted">{item.body}</p>
-              </article>
-            ))}
-          </div>
           <div className="stats">
             {stats.map((item) => (
               <div className="stat" key={item.label}>
@@ -197,7 +168,7 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <p className="eyebrow">Selected work</p>
-            <h2>Software we have taken into production.</h2>
+            <h2>Products we have taken into market.</h2>
           </div>
           <div className="grid-2">
             {portfolio.slice(0, 4).map((item) => (
@@ -212,8 +183,8 @@ export default function Home() {
             <Link to="/portfolio" className="btn btn-gold">
               View portfolio
             </Link>
-            <Link to="/technologies" className="btn btn-ghost">
-              Technologies
+            <Link to="/contact" className="btn btn-ghost">
+              {hero.primaryCta}
             </Link>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function Layout() {
     <>
       <div className="topbar">
         <div className="wrap">
-          <span>{company.address}</span>
+          <span>{company.offices}</span>
           <span className="topbar-right">
             <a href={company.emailHref}>{company.email}</a>
             <a href={company.phoneHref}>{company.phone}</a>
@@ -45,7 +45,7 @@ export default function Layout() {
               </NavLink>
             ))}
             <Link to="/contact" className="btn btn-gold" onClick={() => setOpen(false)}>
-              Get started
+              Book a call
             </Link>
           </nav>
         </div>
@@ -54,13 +54,14 @@ export default function Layout() {
       <section className="cta-band">
         <div className="wrap">
           <p className="eyebrow">Ready to begin?</p>
-          <h2>Let us tailor software around your next programme.</h2>
+          <h2>Tell us what you are building.</h2>
           <p className="muted" style={{ maxWidth: 560, color: 'rgba(255,255,255,0.72)' }}>
-            Share a brief. We will come back with a recommended path — MVP, rebuild, or a dedicated engineering squad.
+            Share a few details about your goals and timeline. We will reply within one business day with the right
+            person from our US or India team.
           </p>
           <div className="hero-actions">
             <NavLink to="/contact" className="btn btn-gold">
-              Get started
+              Book a discovery call
             </NavLink>
             <a href={company.phoneHref} className="btn btn-ghost">
               Call {company.phone}
@@ -74,10 +75,7 @@ export default function Layout() {
             <div className="brand brand-foot" style={{ marginBottom: 16 }}>
               <img src="/vm-logo.png" alt="Victory Minds" className="brand-logo" />
             </div>
-            <p>
-              Hyderabad IT company for custom software, web applications, iOS and Android apps, cloud, and IT services.{' '}
-              {company.tagline}
-            </p>
+            <p>{company.boilerplate}</p>
           </div>
           <div>
             <h4>Company</h4>
@@ -112,6 +110,7 @@ export default function Layout() {
           </div>
           <div>
             <h4>Visit</h4>
+            <p>{company.offices}</p>
             <p>{company.address}</p>
             <p>
               <a href={company.phoneHref}>{company.phone}</a>
@@ -123,7 +122,7 @@ export default function Layout() {
         </div>
         <div className="wrap legal">
           <span>© {new Date().getFullYear()} Victory Minds. All rights reserved.</span>
-          <span>Hyderabad · victoryminds.in</span>
+          <span>United States · Hyderabad · victoryminds.in</span>
         </div>
       </footer>
     </>

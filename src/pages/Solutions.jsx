@@ -7,12 +7,12 @@ export default function Solutions() {
     <>
       <PageHero
         kicker="Solutions"
-        title="Software shaped around the problem — not a kit of parts."
+        title="One partner from product idea to market."
         image="/photos/workshop.jpg"
       >
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          We design and develop applications, integrations, and IT services around the work you actually run — a
-          customer portal, an enterprise system, a clinic, a field team.
+          We build, test, integrate, and implement products; shape go-to-market; connect founders with investors; and
+          keep infrastructure and SOC audits in the same house.
         </p>
       </PageHero>
       <section className="section">
@@ -29,21 +29,17 @@ export default function Solutions() {
         <div className="wrap split">
           <div>
             <p className="eyebrow">Engagement</p>
-            <h2>Build with us, or let us run the first chapter.</h2>
+            <h2>Build right. Launch ready. Backed end to end.</h2>
             <p className="muted">
-              Fixed-scope MVPs, dedicated squads, and co-delivery with your internal engineers are all in play. We
-              recommend the smallest shape that still produces a production system — not a prototype that cannot be
-              staffed.
+              Share a few details about your goals and timeline. We review your note, hold a short discovery call, and
+              return a clear proposal — scope, milestones, and commercials.
             </p>
             <Link to="/contact" className="btn btn-outline">
-              Discuss a solution
+              Get a project quote
             </Link>
           </div>
           <div className="portrait">
-            <img
-              src="/photos/workshop.jpg"
-              alt="Workshop around a software brief"
-            />
+            <img src="/photos/workshop.jpg" alt="Workshop around a product brief" />
           </div>
         </div>
       </section>

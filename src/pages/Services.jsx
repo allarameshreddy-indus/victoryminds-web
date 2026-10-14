@@ -1,29 +1,29 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
-import { developmentLifecycle, developmentPractices, services } from '../content'
+import { developmentLifecycle, services, whyVictoryMinds } from '../content'
 
 export default function Services() {
   return (
     <>
       <PageHero
         kicker="Services"
-        title="Software development and IT services, as one practice."
+        title="Product, testing, integrations, market, and trust — under one roof."
         image="/photos/ios.jpg"
       >
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          Custom applications, web software, iOS and Android apps, cloud, and ongoing IT support — discovery through
-          launch, then a team that stays to operate and improve.
+          We build, test, integrate, and implement products; shape go-to-market strategies; connect founders with
+          investors; and provide IT infrastructure support along with SOC audits.
         </p>
       </PageHero>
 
       <section className="section">
         <div className="wrap">
           <div className="section-head">
-            <p className="eyebrow">What we build</p>
-            <h2>Six practices, one IT studio.</h2>
+            <p className="eyebrow">What we do</p>
+            <h2>Eight practices, one accountable partner.</h2>
             <p className="muted">
-              Choose a lane or combine them. Most software programmes need more than one — a mobile app beside a web
-              portal, or iOS and Android in the same release train, with IT support after go-live.
+              Choose a lane or combine them. Most programmes need more than one — a product beside integrations, or a
+              launch beside infrastructure and audits.
             </p>
           </div>
           <div className="grid-2">
@@ -33,7 +33,7 @@ export default function Services() {
                 <h3>{item.title}</h3>
                 <p className="muted">{item.summary}</p>
                 <a href={`#${item.slug}-detail`} className="text-link">
-                  Read the development detail →
+                  Read the detail →
                 </a>
               </article>
             ))}
@@ -82,8 +82,8 @@ export default function Services() {
       <section className="section navy">
         <div className="wrap">
           <div className="section-head">
-            <p className="eyebrow">How development runs</p>
-            <h2>A delivery rhythm you can inspect.</h2>
+            <p className="eyebrow">How the journey runs</p>
+            <h2>From idea to scale, without vendor handoffs.</h2>
           </div>
           <div className="process process-4">
             {developmentLifecycle.map((item) => (
@@ -100,11 +100,11 @@ export default function Services() {
       <section className="section">
         <div className="wrap">
           <div className="section-head">
-            <p className="eyebrow">Engineering standards</p>
-            <h2>More than features. Software your team can own.</h2>
+            <p className="eyebrow">Why Victory Minds</p>
+            <h2>One partner. Full journey.</h2>
           </div>
-          <div className="grid-3">
-            {developmentPractices.map((item) => (
+          <div className="grid-2">
+            {whyVictoryMinds.map((item) => (
               <article className="card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p className="muted">{item.body}</p>
@@ -113,10 +113,10 @@ export default function Services() {
           </div>
           <div className="hero-actions" style={{ marginTop: 36 }}>
             <Link to="/contact" className="btn btn-gold">
-              Start a build conversation
+              Book a discovery call
             </Link>
-            <Link to="/portfolio" className="btn btn-outline">
-              See selected work
+            <Link to="/contact" className="btn btn-outline">
+              Get a project quote
             </Link>
           </div>
         </div>

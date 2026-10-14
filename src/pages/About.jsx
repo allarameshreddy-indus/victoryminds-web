@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
-import { stats, values } from '../content'
+import { aboutCopy, company, stats, whyVictoryMinds } from '../content'
 
 export default function About() {
   return (
     <>
-      <PageHero kicker="About" title="An IT company with a long view of the software." image="/photos/about.jpg?v=6">
+      <PageHero kicker="About" title="A US and India based technology and product company." image="/photos/about.jpg?v=6">
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          Victory Minds was established in 2010 in Hyderabad. We design, develop, and support software for
-          organisations that need applications to behave under real operational pressure.
+          {company.tagline}
         </p>
       </PageHero>
 
@@ -16,23 +15,16 @@ export default function About() {
         <div className="wrap split">
           <div>
             <h2>Who we are</h2>
-            <p className="muted">
-              We are a software development and IT services firm: discovery, architecture, implementation, and the
-              unglamorous work of keeping applications healthy after the launch party.
-            </p>
-            <p className="muted">
-              From Kavuri Hills we serve founders, operators, and IT leaders who want a team that will argue for the
-              simpler design when it is the right one — and for the harder one when scale, security, or the application
-              in someone’s hand demands it.
-            </p>
+            <p className="muted">{aboutCopy.short}</p>
+            <p className="muted">{aboutCopy.beyond}</p>
             <Link to="/contact" className="btn btn-outline">
-              Start a conversation
+              Book a discovery call
             </Link>
           </div>
           <div className="portrait">
             <img
               src="/photos/about.jpg?v=6"
-              alt="Victory Minds engineers reviewing software together"
+              alt="Victory Minds engineers reviewing a product together"
               style={{ objectPosition: '78% 42%' }}
             />
           </div>
@@ -42,11 +34,11 @@ export default function About() {
       <section className="section cream">
         <div className="wrap">
           <div className="section-head">
-            <p className="eyebrow">Culture</p>
-            <h2>What we refuse to compromise.</h2>
+            <p className="eyebrow">Why Victory Minds</p>
+            <h2>Build right. Launch ready. Backed end to end.</h2>
           </div>
-          <div className="grid-3">
-            {values.map((item) => (
+          <div className="grid-2">
+            {whyVictoryMinds.map((item) => (
               <article className="card" key={item.title}>
                 <h3>{item.title}</h3>
                 <p className="muted">{item.body}</p>

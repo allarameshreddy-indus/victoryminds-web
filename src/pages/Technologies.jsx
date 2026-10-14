@@ -10,8 +10,8 @@ export default function Technologies() {
         image="/photos/code.jpg"
       >
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          We keep a sharp core — web software, mobile apps, cloud, data, and IT services — and stretch it with specialists when a
-          domain demands it.
+          Product engineering, integrations, infrastructure, and audit-ready operations — a sharp core we stretch when
+          the domain demands it.
         </p>
       </PageHero>
       <section className="section">

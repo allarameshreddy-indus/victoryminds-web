@@ -7,7 +7,7 @@ export default function Careers() {
     <>
       <PageHero kicker="Careers" title="Build here. Ship here. Own the craft." image="/photos/careers.jpg">
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          We hire software engineers who like talking to the people who will use the application — and who still care about the
+          US and India based teams hiring people who can build, test, and launch products — and still care about the
           pull request.
         </p>
       </PageHero>
@@ -15,7 +15,7 @@ export default function Careers() {
         <div className="wrap">
           <div className="section-head">
             <p className="eyebrow">Open roles</p>
-            <h2>Hyderabad studio.</h2>
+            <h2>Hyderabad, with a US shore.</h2>
           </div>
           <div className="grid-3">
             {openings.map((item) => (

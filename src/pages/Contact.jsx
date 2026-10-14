@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { company } from '../content'
+import { company, contactInterests, contactNext } from '../content'
 import PageHero from '../components/PageHero'
 import SocialLinks from '../components/SocialLinks'
 
@@ -13,10 +13,10 @@ export default function Contact() {
 
   return (
     <>
-      <PageHero kicker="Contact" title="Tell us what software you need to build." image="/photos/contact.jpg">
+      <PageHero kicker="Contact" title="Tell us what you're building. We'll reply within one business day." image="/photos/contact.jpg">
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          A short brief is enough to start — a new application, a mobile app, cloud, or IT support for systems you
-          already run.
+          Share a few details about your goals and timeline — the right person from our US or India team will get back
+          to you.
         </p>
       </PageHero>
       <section className="section">
@@ -24,49 +24,57 @@ export default function Contact() {
           <div>
             {sent ? (
               <div className="success">
-                Thank you. We have received your note and will be in touch at the details you shared.
+                Thank you. We have received your note and will reply within one business day.
               </div>
             ) : (
               <form className="form" onSubmit={onSubmit}>
                 <input name="name" required placeholder="Your name" />
                 <input name="email" type="email" required placeholder="Work email" />
                 <input name="phone" required placeholder="Phone" />
-                <select name="interest" defaultValue="">
+                <select name="interest" defaultValue="" required>
                   <option value="" disabled>
-                    I am interested in
+                    What do you need help with?
                   </option>
-                  <option>Custom software development</option>
-                  <option>Web application development</option>
-                  <option>iOS app development</option>
-                  <option>Android app development</option>
-                  <option>IT services and support</option>
-                  <option>Cloud</option>
-                  <option>AI / ML</option>
-                  <option>A partnership</option>
-                  <option>Careers</option>
+                  {contactInterests.map((item) => (
+                    <option key={item}>{item}</option>
+                  ))}
                 </select>
-                <textarea name="message" placeholder="Project notes" />
+                <textarea name="message" placeholder="Goals, timeline, and anything we should know" />
                 <button className="btn btn-gold" type="submit">
-                  Send message
+                  Book a discovery call
                 </button>
               </form>
             )}
           </div>
           <aside className="card">
-            <p className="kicker">Studio</p>
-            <h3>Kavuri Hills, Hyderabad</h3>
+            <p className="kicker">Offices</p>
+            <h3>{company.offices}</h3>
             <p>{company.address}</p>
             <p>
               <a href={company.phoneHref}>{company.phone}</a>
               <br />
               <a href={company.emailHref}>{company.email}</a>
             </p>
-            <p className="muted">
-              We typically reply within one business day. For urgent production issues, call the studio line or message
-              us on WhatsApp.
-            </p>
+            <p className="muted">Response time: {company.responseTime}.</p>
             <SocialLinks />
           </aside>
+        </div>
+      </section>
+      <section className="section cream">
+        <div className="wrap">
+          <div className="section-head">
+            <p className="eyebrow">What happens next</p>
+            <h2>A short path from your note to a clear proposal.</h2>
+          </div>
+          <div className="process">
+            {contactNext.map((item) => (
+              <article key={item.step}>
+                <div className="step">{item.step}</div>
+                <h3>{item.title}</h3>
+                <p className="muted">{item.body}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
     </>

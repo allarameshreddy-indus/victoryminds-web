@@ -1,13 +1,18 @@
 export const company = {
   name: 'Victory Minds',
-  tagline: 'We for all…',
+  tagline: 'From product idea to market — built, tested, integrated, and launched.',
+  positioning: 'US and India based technology and product company.',
   founded: 2010,
   email: 'info@victoryminds.com',
   phone: '+91-9030589639',
   phoneHref: 'tel:+919030589639',
   emailHref: 'mailto:info@victoryminds.com',
   address: 'Plot #260, Krishi Allure, Kavuri Hills, Hyderabad — 500081',
+  offices: 'United States • Hyderabad, India',
+  responseTime: 'within one business day',
   site: 'https://victoryminds.in/',
+  boilerplate:
+    'Victory Minds is a US and India based technology and product company. We build, test, integrate, and implement products; shape go-to-market strategies; connect founders with venture capitalists and angel investors; and provide complete IT network and infrastructure support along with SOC audits.',
 }
 
 export const socials = [
@@ -28,219 +33,233 @@ export const nav = [
   { to: '/contact', label: 'Contact' },
 ]
 
-export const values = [
+export const hero = {
+  headline: 'We build, test, integrate, and launch products — then help them win the market.',
+  subhead:
+    'Victory Minds is a US and India based technology partner for startups and enterprises. Product engineering, integrations, implementation, go-to-market strategy, investor connections, IT infrastructure support, and SOC audits — under one roof.',
+  primaryCta: 'Book a discovery call',
+  secondaryCta: 'Get a project quote',
+}
+
+export const aboutCopy = {
+  short:
+    'Victory Minds is a US and India based technology and product company. We work with startups and enterprises across the full product journey: building products, rigorously testing them, integrating them into your ecosystem, implementing them on the ground, and shaping the go-to-market strategies that drive adoption.',
+  beyond:
+    'Beyond the product itself, we connect founders with venture capitalists and angel investors, run complete IT network and infrastructure support, and conduct SOC audits — so you have one accountable partner from idea to scale.',
+}
+
+export const whyVictoryMinds = [
   {
-    title: 'Clarity before code',
-    body: 'We spend time on the business problem, the user, and the constraint. Architecture follows that conversation — not a fashionable stack.',
+    title: 'Two-shore advantage',
+    body: 'US proximity for collaboration, India depth for engineering scale.',
   },
   {
-    title: 'Craft in the delivery',
-    body: 'Reviewed code, visible progress, and environments stakeholders can actually use. Shipping is a habit, not a ceremony at the end.',
+    title: 'One partner, full journey',
+    body: 'Product, testing, integrations, implementation, go-to-market, infrastructure, and audits — no handoffs between vendors.',
   },
   {
-    title: 'Security as a default',
-    body: 'Identity, encryption, least privilege, and secrets kept out of source. Protection is designed with the first story, not patched in at launch.',
+    title: 'Founder-first',
+    body: 'We pair execution with investor connections, not just advice.',
   },
   {
-    title: 'Systems that can grow',
-    body: 'Cloud-native foundations and modular services so a successful pilot is not thrown away when traffic, teams, or markets expand.',
-  },
-  {
-    title: 'Honest partnership',
-    body: 'Direct communication, realistic estimates, and a team that stays after go-live — to operate, improve, and hand over when you are ready.',
-  },
-  {
-    title: 'Local depth, wide reach',
-    body: 'A Hyderabad IT studio that designs software for Indian networks and operations — and for clients who sell beyond them.',
+    title: 'Enterprise-grade discipline',
+    body: 'Audit-ready processes from day one.',
   },
 ]
 
+export const values = whyVictoryMinds
+
 export const capabilities = [
   {
-    title: 'Custom software',
-    body: 'Web applications and enterprise portals shaped around your workflows — not a template you have to live around.',
+    title: 'Product building',
+    body: 'End-to-end product development — from concept, design, and architecture to build and release.',
   },
   {
-    title: 'Mobile app development',
-    body: 'iOS and Android applications with store-ready quality: offline behaviour, push, payments, and the APIs your software actually needs.',
+    title: 'Testing & quality',
+    body: 'Functional, integration, performance, and user-acceptance testing before customers see the product.',
   },
   {
-    title: 'IT services',
-    body: 'Integration, application support, and managed delivery so the software we build — or the systems you already run — stays healthy.',
+    title: 'Integrations',
+    body: 'Seamless connections between your product and third-party platforms, APIs, and enterprise systems.',
   },
   {
-    title: 'Cloud platforms',
-    body: 'Azure, AWS, and GCP for hosting, identity, data, and scale — designed for cost as well as uptime.',
+    title: 'Implementation',
+    body: 'On-ground rollout: deployment, configuration, data migration, and team training so adoption sticks.',
   },
   {
-    title: 'Data & intelligence',
-    body: 'Pipelines, warehouses, and dashboards that turn operational noise into decisions your teams can act on the same week.',
+    title: 'Go-to-market',
+    body: 'Positioning, messaging, launch planning, and channel strategy that takes the product to revenue.',
   },
   {
-    title: 'DevOps & quality',
-    body: 'CI/CD, automated tests, observability, and release discipline so updates land without drama.',
+    title: 'Investor connections',
+    body: 'Pitch-readiness support and warm introductions to venture capitalists and angel investors.',
   },
 ]
 
 export const services = [
   {
-    slug: 'custom-software',
-    title: 'Custom software development',
-    kicker: 'From brief to production',
+    slug: 'product-building',
+    title: 'Product Building',
+    kicker: 'Concept to release',
     summary:
-      'End-to-end software engineering — discovery, experience, architecture, build, launch, and iteration — so what ships is what the business actually needs.',
+      'End-to-end product development — from concept, design, and architecture to build and release. Web, mobile, and enterprise products engineered to scale.',
     image: '/photos/team.jpg',
     details: [
-      'Discovery workshops that define users, jobs-to-be-done, and a release plan you can fund with confidence.',
-      'Experience design for web and mobile: information architecture, interface systems, and prototypes teams can build from.',
-      'Full-stack engineering of MVPs and production platforms — APIs, data models, admin consoles, and customer-facing applications.',
-      'Release engineering, analytics, and a backlog cadence so the software keeps improving after the first launch.',
+      'Concept, experience, and architecture before the first production commit.',
+      'Web, mobile, and enterprise products engineered to scale with the business.',
+      'Build and release under one team so design and engineering do not drift apart.',
+      'A backlog cadence after launch so the product keeps moving once it is in market.',
     ],
-    stack: ['React', 'Node.js', 'Python', 'PostgreSQL', 'Azure / AWS', 'Figma'],
+    stack: ['Web', 'Mobile', 'Enterprise', 'Architecture', 'Design', 'Release'],
   },
   {
-    slug: 'it-services',
-    title: 'IT services',
-    kicker: 'Support, integration & delivery',
+    slug: 'product-testing',
+    title: 'Product Testing',
+    kicker: 'Quality before customers',
     summary:
-      'Software is only useful if it stays reliable. We integrate systems, support production applications, and run delivery so your IT team is not left holding a black box.',
-    image: '/photos/support.jpg',
-    details: [
-      'Application support and incident response for software we built — or systems you already operate.',
-      'API and system integration across ERPs, CRMs, payments, identity, and internal tools.',
-      'Cloud operations: environments, monitoring, backups, and cost-aware hosting on Azure, AWS, or GCP.',
-      'Dedicated or co-sourced engineering capacity when you need more delivery without hiring a whole department.',
-    ],
-    stack: ['Azure', 'AWS', 'APIs', 'Monitoring', 'ITIL-style support', 'CI/CD'],
-  },
-  {
-    slug: 'ios',
-    title: 'iOS app development',
-    kicker: 'Native Apple software',
-    summary:
-      'Swift-built software for iPhone and iPad — fast, accessible, and ready for TestFlight and the App Store.',
-    image: '/photos/ios.jpg',
-    details: [
-      'Native Swift and SwiftUI, with UIKit where it still earns its place.',
-      'Secure auth, push, offline caches, and deep links that behave like a first-class iOS citizen.',
-      'App Store submission, TestFlight programmes, and versioning that respects review cycles.',
-      'Integration with existing APIs, payments, maps, Health, and enterprise MDM when required.',
-    ],
-    stack: ['Swift', 'SwiftUI', 'UIKit', 'TestFlight', 'Core Data', 'REST / GraphQL'],
-  },
-  {
-    slug: 'android',
-    title: 'Android app development',
-    kicker: 'Play Store software',
-    summary:
-      'Kotlin applications that feel native across the Android family — phones, tablets, and the OEM variations your users actually own.',
-    image: '/photos/android.jpg',
-    details: [
-      'Modern Android with Kotlin, Jetpack Compose, and Material Design 3 patterns.',
-      'Background work, notifications, and storage designed for battery and data limits in India and global markets.',
-      'Play Console releases, staged rollouts, crash telemetry, and device-lab QA.',
-      'Shared application logic with iOS where it helps — without forcing a lowest-common-denominator interface.',
-    ],
-    stack: ['Kotlin', 'Jetpack Compose', 'Android SDK', 'Play Console', 'Firebase', 'Room'],
-  },
-  {
-    slug: 'application-development',
-    title: 'Application development',
-    kicker: 'Web & enterprise',
-    summary:
-      'Business applications, customer portals, and internal tools with clear domains, audit-friendly data, and interfaces people will actually use.',
+      'Functional, integration, performance, and user-acceptance testing that catches issues before your customers do.',
     image: '/photos/dashboard.jpg',
     details: [
-      'Role-based web applications for operations, finance, HR, and customer self-service.',
-      'API design and integration with existing ERPs, CRMs, payment rails, and identity providers.',
-      'Performance, accessibility, and browser coverage as part of the same pipeline as features.',
-      'Handover packs: runbooks, environments, and knowledge transfer for your internal team.',
+      'Functional coverage against the journeys your users actually take.',
+      'Integration tests across APIs, data, and third-party platforms.',
+      'Performance checks before peak load is a surprise.',
+      'User-acceptance programmes that give stakeholders a clear go / no-go.',
     ],
-    stack: ['React', 'TypeScript', 'Java', 'Python', 'SQL', 'REST'],
+    stack: ['Functional QA', 'Integration', 'Performance', 'UAT'],
   },
   {
-    slug: 'ai-ml',
-    title: 'AI & machine learning',
-    kicker: 'Intelligence in the software',
+    slug: 'product-integrations',
+    title: 'Product Integrations',
+    kicker: 'One working system',
     summary:
-      'Practical models and copilots inside real workflows — predictions, classification, retrieval, and automation with human review where it matters.',
+      'Seamless connections between your product and third-party platforms, APIs, and enterprise systems — so everything works as one.',
+    image: '/photos/support.jpg',
+    details: [
+      'API and platform connections designed as part of the product, not bolted on later.',
+      'Enterprise systems — CRM, ERP, identity, payments — wired into one flow.',
+      'Error handling, retries, and observability so integrations stay operable.',
+      'A single picture of how data moves, instead of a patchwork of scripts.',
+    ],
+    stack: ['APIs', 'Enterprise systems', 'Identity', 'Payments'],
+  },
+  {
+    slug: 'implementation',
+    title: 'Implementation',
+    kicker: 'On-ground rollout',
+    summary:
+      'On-ground rollout done right: deployment, configuration, data migration, and team training, so adoption sticks.',
+    image: '/photos/workshop.jpg',
+    details: [
+      'Deployment and configuration that match how the operation actually runs.',
+      'Data migration with checks, so history arrives intact.',
+      'Team training that makes the first week after go-live usable.',
+      'Hypercare after launch until the product is in the team’s hands, not ours.',
+    ],
+    stack: ['Deployment', 'Migration', 'Training', 'Hypercare'],
+  },
+  {
+    slug: 'go-to-market',
+    title: 'Go-to-Market Strategy',
+    kicker: 'Launch to revenue',
+    summary:
+      'Positioning, messaging, launch planning, and channel strategy that takes your product to customers and revenue.',
+    image: '/photos/contact.jpg',
+    details: [
+      'Positioning and messaging that a buyer can repeat without a slide deck.',
+      'Launch planning with a sequence, not a single announcement.',
+      'Channel strategy so the product reaches the customers you named.',
+      'Feedback loops from market into the product backlog.',
+    ],
+    stack: ['Positioning', 'Messaging', 'Launch', 'Channels'],
+  },
+  {
+    slug: 'investor-connections',
+    title: 'Investor Connections',
+    kicker: 'Founders and capital',
+    summary:
+      'Pitch-readiness support and warm introductions connecting founders with venture capitalists and angel investors.',
+    image: '/photos/careers.jpg',
+    details: [
+      'Pitch-readiness: the story, the numbers, and the product proof in one pack.',
+      'Warm introductions to venture capitalists and angel investors.',
+      'A founder-first process — execution paired with capital conversations, not just advice.',
+      'Materials that survive diligence because the product and the numbers agree.',
+    ],
+    stack: ['Pitch-readiness', 'VCs', 'Angel investors'],
+  },
+  {
+    slug: 'it-infrastructure',
+    title: 'IT Network & Infrastructure Support',
+    kicker: 'Always on',
+    summary:
+      'Complete setup, monitoring, and support of your IT networks and infrastructure — secure, reliable, and always on.',
+    image: '/photos/code.jpg',
+    details: [
+      'Setup of networks and infrastructure to a standard you can operate.',
+      'Monitoring and support so incidents have an owner.',
+      'Security defaults: access, backups, and a clear recovery path.',
+      'A partner who stays after the racks and cloud accounts are live.',
+    ],
+    stack: ['Networks', 'Cloud', 'Monitoring', 'Support'],
+  },
+  {
+    slug: 'soc-audits',
+    title: 'SOC Audits',
+    kicker: 'Trust you can show',
+    summary:
+      'Structured SOC audit support to assess controls, close gaps, and demonstrate trust to customers and partners.',
     image: '/photos/ai.jpg',
     details: [
-      'Use-case framing so AI is a feature with a metric, not a slide with a demo.',
-      'Data preparation, evaluation, and monitoring so models do not silently drift.',
-      'Retrieval-augmented assistants grounded in your documents and systems of record.',
-      'Responsible defaults: audit logs, fallbacks, and a person in the loop for high-stakes actions.',
+      'Assessment of controls against what customers and partners will ask.',
+      'Gap closure with a backlog, owners, and evidence — not a slide.',
+      'Audit-ready process from day one, not a scramble before the questionnaire.',
+      'Support through the audit so trust is demonstrated, not claimed.',
     ],
-    stack: ['Python', 'PyTorch', 'Azure OpenAI', 'Vector search', 'MLOps', 'LangChain'],
+    stack: ['SOC', 'Controls', 'Evidence', 'Audit support'],
   },
 ]
 
-export const developmentPractices = [
-  {
-    title: 'Discovery before code',
-    body: 'Workshops, journey maps, and a thin architecture sketch prevent expensive rebuilds later.',
-  },
-  {
-    title: 'Architecture that can grow',
-    body: 'Modular services and cloud-native hosting so a pilot can become the production system.',
-  },
-  {
-    title: 'Engineering in the open',
-    body: 'Short iterations, reviewed pull requests, tests, and staging environments you can click.',
-  },
-  {
-    title: 'Quality as a release habit',
-    body: 'Functional QA, device and browser coverage, accessibility, and performance budgets in the pipeline.',
-  },
-  {
-    title: 'Secure by construction',
-    body: 'Identity, encryption in transit, least-privilege access, and secrets that never live in the repo.',
-  },
-  {
-    title: 'Handover that lasts',
-    body: 'Documentation and knowledge transfer so your team can own the software — or we remain the IT partner after go-live.',
-  },
-]
+export const developmentPractices = whyVictoryMinds
 
 export const developmentLifecycle = [
   {
     step: '01',
-    title: 'Frame',
-    body: 'Scope, users, success measures, and a recommended path — MVP, phased, or a targeted rebuild.',
+    title: 'Build',
+    body: 'Concept, design, architecture, and release — web, mobile, and enterprise products engineered to scale.',
   },
   {
     step: '02',
-    title: 'Design',
-    body: 'Experience and technical design in parallel, so the interface and the system agree before build ramps up.',
+    title: 'Test',
+    body: 'Functional, integration, performance, and user-acceptance testing before customers see the product.',
   },
   {
     step: '03',
-    title: 'Build',
-    body: 'Agile delivery with demos you can use. Web, mobile apps, APIs, and cloud work on one backlog.',
+    title: 'Integrate & implement',
+    body: 'APIs, platforms, deployment, migration, and training so the product lands in a working ecosystem.',
   },
   {
     step: '04',
-    title: 'Launch & evolve',
-    body: 'Store submissions, production hardening, monitoring, and a cadence of improvements with real users.',
+    title: 'Launch & scale',
+    body: 'Go-to-market, investor conversations, infrastructure, and SOC audits — one partner from idea to scale.',
   },
 ]
 
 export const solutions = [
   {
-    title: 'Customer-facing software',
-    body: 'Consumer and B2B applications with onboarding, payments, notifications, and analytics designed as one system — not a pile of screens.',
+    title: 'Full product journey',
+    body: 'Build, test, integrate, implement, and take the product to market with one accountable team — no handoffs between vendors.',
   },
   {
-    title: 'Enterprise applications',
-    body: 'Internal software for operations, finance, HR, clinics, logistics, and the back office — replacing spreadsheets without replacing the people who know the work.',
+    title: 'Two-shore delivery',
+    body: 'US proximity for collaboration, India depth for engineering scale — for startups and enterprises that need both.',
   },
   {
-    title: 'Cloud & integration',
-    body: 'Hosted platforms, APIs, and IT integration so your applications, data, and identity live in one coherent estate.',
+    title: 'Founder to market',
+    body: 'Go-to-market strategy plus pitch-readiness and warm introductions to venture capitalists and angel investors.',
   },
   {
-    title: 'Data & analytics software',
-    body: 'Warehouses, governed metrics, and dashboards for leadership — built on the same events your applications already produce.',
+    title: 'Trust and operations',
+    body: 'IT network and infrastructure support with structured SOC audit support, so customers and partners can see the controls.',
   },
 ]
 
@@ -250,7 +269,7 @@ export const technologies = [
   { group: 'Mobile apps', items: ['iOS / SwiftUI', 'Android / Compose', 'Firebase', 'TestFlight'] },
   { group: 'Cloud & DevOps', items: ['Azure', 'AWS', 'GCP', 'CI/CD', 'Kubernetes', 'Terraform'] },
   { group: 'Data & AI', items: ['Data engineering', 'PostgreSQL', 'Spark', 'AI / ML', 'MLOps'] },
-  { group: 'IT services', items: ['APIs', 'Integration', 'Monitoring', 'Support'] },
+  { group: 'Trust & operations', items: ['Integrations', 'Infrastructure', 'Monitoring', 'SOC audits'] },
 ]
 
 export const portfolio = [
@@ -280,23 +299,53 @@ export const openings = [
   {
     title: 'Full-stack engineer',
     type: 'Hyderabad · Full-time',
-    body: 'React and Node or Python, with a taste for software conversations — not only tickets.',
+    body: 'Product engineering across web and APIs — from build through test and release.',
   },
   {
     title: 'Mobile engineer (iOS / Android)',
     type: 'Hyderabad · Full-time',
-    body: 'Native craft on at least one platform, curiosity for the other, and patience for store reviews.',
+    body: 'Native craft on at least one platform, with the discipline to ship store-ready product.',
   },
   {
-    title: 'Cloud / backend engineer',
+    title: 'Cloud / infrastructure engineer',
     type: 'Hyderabad · Full-time',
-    body: 'APIs, data, and cloud operations — with the humility to design for a network that will fail at the worst moment.',
+    body: 'Networks, cloud, monitoring, and the operational bar that SOC conversations require.',
   },
 ]
 
 export const stats = [
-  { value: '2010', label: 'Studio founded' },
-  { value: '6', label: 'Software practices' },
-  { value: 'HYD', label: 'Home in Kavuri Hills' },
-  { value: '24/7', label: 'Support after launch' },
+  { value: 'US+IN', label: 'Two-shore partner' },
+  { value: '8', label: 'Practices under one roof' },
+  { value: '1', label: 'Accountable partner' },
+  { value: '1 day', label: 'Typical response' },
+]
+
+export const contactInterests = [
+  'Product Building',
+  'Product Testing',
+  'Product Integrations',
+  'Implementation',
+  'Go-to-Market Strategy',
+  'Investor Connections (VCs / Angel Investors)',
+  'IT Network & Infrastructure Support',
+  'SOC Audits',
+  'Something else',
+]
+
+export const contactNext = [
+  {
+    step: '01',
+    title: 'Review',
+    body: 'We review your note and align the right team.',
+  },
+  {
+    step: '02',
+    title: 'Discovery',
+    body: 'A short discovery call to understand scope and timelines.',
+  },
+  {
+    step: '03',
+    title: 'Proposal',
+    body: 'A clear proposal — scope, milestones, and commercials.',
+  },
 ]

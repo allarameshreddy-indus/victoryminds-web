@@ -7,8 +7,8 @@ export default function Portfolio() {
     <>
       <PageHero kicker="Portfolio" title="Work that left the building." image="/photos/dashboard.jpg">
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          A few shapes of engagement — logistics, healthcare, retail, and manufacturing — where software had to
-          survive operators, peak load, or a busy operations team.
+          Products we have built, tested, integrated, and taken into market — logistics, healthcare, retail, and
+          enterprise operations.
         </p>
       </PageHero>
       <section className="section">
