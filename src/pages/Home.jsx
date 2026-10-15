@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom'
-import { aboutCopy, hero, portfolio, services, stats, whyVictoryMinds } from '../content'
+import { aboutCopy, clients, emergingTech, hero, reviews, services, stats, whyVictoryMinds } from '../content'
 
 const aboutImg = '/studio-portrait.jpg?v=3'
 
 const heroPills = [
   { label: 'Product Building', icon: 'code' },
-  { label: 'Product Testing', icon: 'data' },
+  { label: 'AI & Emerging Tech', icon: 'ai' },
+  { label: 'HR Services', icon: 'shield' },
+  { label: 'Go-to-Market', icon: 'data' },
   { label: 'Integrations', icon: 'cloud' },
-  { label: 'Implementation', icon: 'shield' },
-  { label: 'Go-to-Market', icon: 'ai' },
-  { label: 'Investors', icon: 'code' },
+  { label: 'Testing', icon: 'data' },
   { label: 'Infrastructure', icon: 'cloud' },
   { label: 'SOC Audits', icon: 'shield' },
 ]
@@ -133,12 +133,36 @@ export default function Home() {
       <section className="section cream">
         <div className="wrap">
           <div className="section-head">
+            <p className="eyebrow">Highlighted</p>
+            <h2>AI and emerging technologies, in the product — not on a slide.</h2>
+            <p className="muted">
+              Copilots, retrieval, AI search visibility, vision and XR-ready pipelines, with evaluation and a person in
+              the loop.
+            </p>
+          </div>
+          <div className="grid-2">
+            {emergingTech.map((item) => (
+              <article className="card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p className="muted">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <Link to="/services#ai-emerging-detail" className="text-link">
+            See the AI practice →
+          </Link>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap">
+          <div className="section-head">
             <p className="eyebrow">Services</p>
-            <h2>Eight practices, one accountable partner.</h2>
+            <h2>Product, AI, HR, market, and trust — one partner.</h2>
           </div>
           <div className="grid-3">
             {services.map((item) => (
-              <article className="card" key={item.slug}>
+              <article className={`card${item.featured ? ' card-featured' : ''}`} key={item.slug}>
                 <p className="kicker">{item.kicker}</p>
                 <h3>{item.title}</h3>
                 <p className="muted">{item.summary}</p>
@@ -167,21 +191,41 @@ export default function Home() {
       <section className="section navy">
         <div className="wrap">
           <div className="section-head">
-            <p className="eyebrow">Selected work</p>
-            <h2>Products we have taken into market.</h2>
+            <p className="eyebrow">Clients</p>
+            <h2>GTM clients we take to market.</h2>
           </div>
           <div className="grid-2">
-            {portfolio.slice(0, 4).map((item) => (
-              <article className="card" key={item.title}>
+            {clients.map((item) => (
+              <article className="card" key={item.name}>
                 <p className="kicker">{item.sector}</p>
-                <h3>{item.title}</h3>
+                <h3>{item.name}</h3>
                 <p className="muted">{item.body}</p>
+                <a className="text-link" href={item.url} target="_blank" rel="noreferrer">
+                  Visit site →
+                </a>
+              </article>
+            ))}
+          </div>
+          <div className="section-head" style={{ marginTop: 56 }}>
+            <p className="eyebrow">Reviews</p>
+            <h2>From the companies we launch with.</h2>
+          </div>
+          <div className="grid-2">
+            {reviews.map((item) => (
+              <article className="card review-card" key={item.company}>
+                <p className="quote">“{item.quote}”</p>
+                <p className="review-meta">
+                  {item.role},{' '}
+                  <a href={item.url} target="_blank" rel="noreferrer">
+                    {item.company}
+                  </a>
+                </p>
               </article>
             ))}
           </div>
           <div className="hero-actions" style={{ marginTop: 32 }}>
-            <Link to="/portfolio" className="btn btn-gold">
-              View portfolio
+            <Link to="/clients" className="btn btn-gold">
+              All clients
             </Link>
             <Link to="/contact" className="btn btn-ghost">
               {hero.primaryCta}

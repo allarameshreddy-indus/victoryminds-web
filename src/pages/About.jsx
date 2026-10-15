@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import PageHero from '../components/PageHero'
-import { aboutCopy, company, stats, whyVictoryMinds } from '../content'
+import { aboutCopy, company, solutions, stats, whyVictoryMinds } from '../content'
 
 export default function About() {
   return (
@@ -45,6 +45,23 @@ export default function About() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap">
+          <div className="section-head">
+            <p className="eyebrow">How we engage</p>
+            <h2>One partner from product idea to market.</h2>
+          </div>
+          <div className="grid-2">
+            {solutions.map((item) => (
+              <article className="card" key={item.title}>
+                <h3>{item.title}</h3>
+                <p className="muted">{item.body}</p>
+              </article>
+            ))}
+          </div>
           <div className="stats">
             {stats.map((item) => (
               <div className="stat" key={item.label}>
@@ -52,6 +69,25 @@ export default function About() {
                 {item.label}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section cream">
+        <div className="wrap split">
+          <div>
+            <p className="eyebrow">Teams</p>
+            <h2>Build here. Ship here. Own the craft.</h2>
+            <p className="muted">{aboutCopy.join}</p>
+            <a className="btn btn-outline" href={company.emailHref}>
+              Write to {company.email}
+            </a>
+          </div>
+          <div>
+            <p className="muted">
+              US proximity for collaboration, India depth for engineering scale — including AI, HR, and go-to-market
+              roles when the brief needs them.
+            </p>
           </div>
         </div>
       </section>

@@ -613,6 +613,10 @@ header.site {
   font-size: 0.92rem;
 }
 
+.navy .text-link {
+  color: #bbdcff;
+}
+
 .process .step {
   font-family: Outfit, sans-serif;
   font-size: 0.85rem;
@@ -626,6 +630,36 @@ header.site {
   font-size: 1.45rem;
   font-style: italic;
   line-height: 1.4;
+  margin: 0 0 16px;
+}
+
+.card-featured {
+  border-color: rgba(26, 115, 232, 0.55);
+  box-shadow: 0 16px 40px rgba(26, 115, 232, 0.16);
+}
+
+.card-featured .kicker {
+  color: var(--rose);
+}
+
+.review-meta {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.review-meta a {
+  color: var(--rose);
+}
+
+.navy .quote {
+  color: #fff;
+}
+
+.navy .review-meta,
+.navy .review-meta a {
+  color: #bbdcff;
 }
 
 .page-hero {

@@ -12,11 +12,11 @@ export const company = {
   responseTime: 'within one business day',
   site: 'https://victoryminds.in/',
   boilerplate:
-    'Victory Minds is a US and India based technology and product company. We build, test, integrate, and implement products; shape go-to-market strategies; connect founders with venture capitalists and angel investors; and provide complete IT network and infrastructure support along with SOC audits.',
+    'Victory Minds is a US and India based technology and product company. We build, test, integrate, and launch products; apply AI and emerging technologies; run HR services; shape go-to-market strategies; connect founders with investors; and provide IT infrastructure support along with SOC audits.',
 }
 
 export const socials = [
-  { name: 'X', href: 'https://x.com/victoryminds', icon: 'x' },
+  { name: 'X', href: 'https://x.com/victorymindstek', icon: 'x' },
   { name: 'Facebook', href: 'https://www.facebook.com/victorymindsin/', icon: 'facebook' },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/company/victorymindsin/home/', icon: 'linkedin' },
   { name: 'WhatsApp', href: 'https://api.whatsapp.com/send?phone=919030589639', icon: 'whatsapp' },
@@ -26,17 +26,15 @@ export const nav = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
-  { to: '/solutions', label: 'Solutions' },
   { to: '/technologies', label: 'Technologies' },
-  { to: '/portfolio', label: 'Portfolio' },
-  { to: '/careers', label: 'Careers' },
+  { to: '/clients', label: 'Clients' },
   { to: '/contact', label: 'Contact' },
 ]
 
 export const hero = {
   headline: 'We build, test, integrate, and launch products — then help them win the market.',
   subhead:
-    'Victory Minds is a US and India based technology partner for startups and enterprises. Product engineering, integrations, implementation, go-to-market strategy, investor connections, IT infrastructure support, and SOC audits — under one roof.',
+    'Victory Minds is a US and India based technology partner for startups and enterprises. Product engineering, AI and emerging technologies, HR services, integrations, implementation, go-to-market, investor connections, IT infrastructure, and SOC audits — under one roof.',
   primaryCta: 'Book a discovery call',
   secondaryCta: 'Get a project quote',
 }
@@ -45,7 +43,9 @@ export const aboutCopy = {
   short:
     'Victory Minds is a US and India based technology and product company. We work with startups and enterprises across the full product journey: building products, rigorously testing them, integrating them into your ecosystem, implementing them on the ground, and shaping the go-to-market strategies that drive adoption.',
   beyond:
-    'Beyond the product itself, we connect founders with venture capitalists and angel investors, run complete IT network and infrastructure support, and conduct SOC audits — so you have one accountable partner from idea to scale.',
+    'Beyond the product itself, we apply AI and emerging technologies, run HR services, connect founders with venture capitalists and angel investors, support IT networks and infrastructure, and conduct SOC audits — so you have one accountable partner from idea to scale.',
+  join:
+    'We hire people who can build, test, and launch — across our US and India teams. If no role is listed, send a portfolio and a note on the work you want next to info@victoryminds.com.',
 }
 
 export const whyVictoryMinds = [
@@ -111,6 +111,37 @@ export const services = [
       'A backlog cadence after launch so the product keeps moving once it is in market.',
     ],
     stack: ['Web', 'Mobile', 'Enterprise', 'Architecture', 'Design', 'Release'],
+  },
+  {
+    slug: 'ai-emerging',
+    title: 'AI & Emerging Technologies',
+    kicker: 'Highlighted practice',
+    summary:
+      'Practical AI, automation, and emerging stacks inside real products — copilots, retrieval, computer vision, XR-ready pipelines, and AI-search visibility — with human review where it matters.',
+    image: '/photos/ai.jpg',
+    details: [
+      'Use-case framing so AI is a feature with a metric, not a slide with a demo.',
+      'Generative AI, copilots, and retrieval grounded in your documents and systems of record.',
+      'Emerging surfaces: computer vision, XR-ready content pipelines, and answer-engine visibility (AEO / GEO).',
+      'Evaluation, monitoring, and a person in the loop for high-stakes actions.',
+    ],
+    stack: ['Generative AI', 'Copilots', 'RAG', 'AEO / GEO', 'XR / vision', 'MLOps'],
+    featured: true,
+  },
+  {
+    slug: 'hr-services',
+    title: 'HR Services',
+    kicker: 'People and process',
+    summary:
+      'HR support for product companies that are scaling: hiring, onboarding, HRIS, policies, and two-shore team design so the organisation can keep up with the product.',
+    image: '/photos/careers.jpg',
+    details: [
+      'Talent programmes and hiring support for engineering, product, and go-to-market roles.',
+      'Onboarding, policies, and HR process that a growing US–India team can actually run.',
+      'HRIS and people-ops tooling integrated with the systems you already use.',
+      'Two-shore team design so collaboration and scale stay in the same operating model.',
+    ],
+    stack: ['Hiring', 'Onboarding', 'HRIS', 'People ops', 'Two-shore teams'],
   },
   {
     slug: 'product-testing',
@@ -268,60 +299,101 @@ export const technologies = [
   { group: 'Web & software', items: ['React', 'Node.js', 'Flutter', 'REST', 'GraphQL'] },
   { group: 'Mobile apps', items: ['iOS / SwiftUI', 'Android / Compose', 'Firebase', 'TestFlight'] },
   { group: 'Cloud & DevOps', items: ['Azure', 'AWS', 'GCP', 'CI/CD', 'Kubernetes', 'Terraform'] },
-  { group: 'Data & AI', items: ['Data engineering', 'PostgreSQL', 'Spark', 'AI / ML', 'MLOps'] },
-  { group: 'Trust & operations', items: ['Integrations', 'Infrastructure', 'Monitoring', 'SOC audits'] },
+  {
+    group: 'AI & emerging tech',
+    items: ['Generative AI', 'Copilots', 'RAG', 'AEO / GEO', 'Computer vision', 'XR pipelines', 'MLOps'],
+  },
+  { group: 'Trust, HR & operations', items: ['HRIS', 'Integrations', 'Infrastructure', 'Monitoring', 'SOC audits'] },
 ]
 
-export const portfolio = [
+export const emergingTech = [
   {
-    title: 'Field operations console',
-    sector: 'Logistics',
-    body: 'A web operations console and Android app for a regional logistics team — live status, exception queues, and a handover that operations could run without us in the room.',
+    title: 'Generative AI & copilots',
+    body: 'Assistants inside real workflows — drafting, retrieval, classification — with evaluation and a human in the loop.',
   },
   {
-    title: 'Clinic scheduling platform',
-    sector: 'Healthcare',
-    body: 'Appointment, billing, and practitioner workflows on a single portal, with an iOS app for on-call staff and audit trails the admin team asked for on day one.',
+    title: 'AI search & visibility',
+    body: 'Answer-engine and generative-engine optimisation so products and local businesses are what AI assistants recommend.',
   },
   {
-    title: 'Retail commerce stack',
-    sector: 'Retail',
-    body: 'Catalogue, checkout, and a merchant admin rebuilt for festive peaks — React storefront, payments, and a warehouse feed that no longer needed nightly CSV rituals.',
+    title: 'Vision, XR & immersive pipelines',
+    body: 'Computer vision and XR-ready content pipelines for products that have to be seen, walked, or demonstrated — not only described.',
   },
   {
-    title: 'Operations reporting suite',
-    sector: 'Enterprise',
-    body: 'A data warehouse and leadership dashboards that replaced weekly spreadsheet rituals — with access control, scheduled extracts, and a web portal the business actually opened.',
+    title: 'Automation at the edge of the stack',
+    body: 'Emerging tooling wired into the product, not a side experiment: APIs, agents, and operations that stay observable.',
   },
 ]
 
-export const openings = [
+export const clients = [
   {
-    title: 'Full-stack engineer',
-    type: 'Hyderabad · Full-time',
-    body: 'Product engineering across web and APIs — from build through test and release.',
+    name: 'ArtoCM',
+    sector: 'Clinical education · GTM',
+    url: 'https://artocm.com/',
+    body: 'The Art of Clinical Medicine — courses and topics for medical students and postgraduates. We support go-to-market so better information reaches the clinicians who need it.',
   },
   {
-    title: 'Mobile engineer (iOS / Android)',
-    type: 'Hyderabad · Full-time',
-    body: 'Native craft on at least one platform, with the discipline to ship store-ready product.',
+    name: 'CYMAX',
+    sector: 'Immersive technology · GTM',
+    url: 'https://www.cymax.co.in/',
+    body: 'VR walkthroughs, 3D renders, AI films, and XR from Hyderabad. GTM for an immersive studio selling to developers, brands, and enterprises.',
   },
   {
-    title: 'Cloud / infrastructure engineer',
-    type: 'Hyderabad · Full-time',
-    body: 'Networks, cloud, monitoring, and the operational bar that SOC conversations require.',
+    name: 'Gobble List',
+    sector: 'Consumer product · GTM',
+    url: 'https://gobblelist.com/',
+    body: 'A shared AI grocery list for the whole family. Positioning and launch support so a household product can find its market.',
+  },
+  {
+    name: 'Nona Digi',
+    sector: 'AI growth · GTM',
+    url: 'https://nonadigi.com/',
+    body: 'AI visibility, AEO, and an AI chat receptionist for local businesses. Go-to-market so AI search turns into booked appointments.',
+  },
+]
+
+export const reviews = [
+  {
+    quote:
+      'Victory Minds treated our clinical education platform as a market, not only a catalogue of courses. The GTM work made it clearer who we were speaking to — and how we show up for them.',
+    role: 'Leadership',
+    company: 'ArtoCM',
+    url: 'https://artocm.com/',
+  },
+  {
+    quote:
+      'We build immersive experiences. They helped us tell that story to buyers — VR, AI films, and XR — without drowning the pitch in studio jargon.',
+    role: 'Leadership',
+    company: 'CYMAX',
+    url: 'https://www.cymax.co.in/',
+  },
+  {
+    quote:
+      'Gobble List is a simple product with a sharp job. Victory Minds kept the go-to-market equally sharp: one list, the whole family, a reason to start today.',
+    role: 'Product team',
+    company: 'Gobble List',
+    url: 'https://gobblelist.com/',
+  },
+  {
+    quote:
+      'They understood that our market is AI search, not another brochure website. GTM for Nona Digi was about becoming the answer assistants recommend — and converting that into revenue.',
+    role: 'Leadership',
+    company: 'Nona Digi',
+    url: 'https://nonadigi.com/',
   },
 ]
 
 export const stats = [
   { value: 'US+IN', label: 'Two-shore partner' },
-  { value: '8', label: 'Practices under one roof' },
+  { value: '10', label: 'Practices under one roof' },
   { value: '1', label: 'Accountable partner' },
   { value: '1 day', label: 'Typical response' },
 ]
 
 export const contactInterests = [
   'Product Building',
+  'AI & Emerging Technologies',
+  'HR Services',
   'Product Testing',
   'Product Integrations',
   'Implementation',

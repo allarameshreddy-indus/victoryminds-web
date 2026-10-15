@@ -84,10 +84,7 @@ export default function Layout() {
                 <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <NavLink to="/portfolio">Portfolio</NavLink>
-              </li>
-              <li>
-                <NavLink to="/careers">Careers</NavLink>
+                <NavLink to="/clients">Clients</NavLink>
               </li>
               <li>
                 <NavLink to="/contact">Contact</NavLink>
@@ -99,9 +96,6 @@ export default function Layout() {
             <ul>
               <li>
                 <NavLink to="/services">Services</NavLink>
-              </li>
-              <li>
-                <NavLink to="/solutions">Solutions</NavLink>
               </li>
               <li>
                 <NavLink to="/technologies">Technologies</NavLink>

@@ -7,12 +7,12 @@ export default function Services() {
     <>
       <PageHero
         kicker="Services"
-        title="Product, testing, integrations, market, and trust — under one roof."
+        title="Product, AI, HR, market, and trust — under one roof."
         image="/photos/ios.jpg"
       >
         <p className="muted" style={{ maxWidth: 640, color: 'rgba(255,255,255,0.86)' }}>
-          We build, test, integrate, and implement products; shape go-to-market strategies; connect founders with
-          investors; and provide IT infrastructure support along with SOC audits.
+          We build, test, integrate, and launch products; apply AI and emerging technologies; run HR services; shape
+          go-to-market; connect founders with investors; and provide IT infrastructure support along with SOC audits.
         </p>
       </PageHero>
 
@@ -20,7 +20,7 @@ export default function Services() {
         <div className="wrap">
           <div className="section-head">
             <p className="eyebrow">What we do</p>
-            <h2>Eight practices, one accountable partner.</h2>
+            <h2>Practices under one roof — including AI, emerging tech, and HR.</h2>
             <p className="muted">
               Choose a lane or combine them. Most programmes need more than one — a product beside integrations, or a
               launch beside infrastructure and audits.
@@ -28,7 +28,7 @@ export default function Services() {
           </div>
           <div className="grid-2">
             {services.map((item) => (
-              <article className="card service-card" key={item.slug} id={item.slug}>
+              <article className={`card service-card${item.featured ? ' card-featured' : ''}`} key={item.slug} id={item.slug}>
                 <p className="kicker">{item.kicker}</p>
                 <h3>{item.title}</h3>
                 <p className="muted">{item.summary}</p>
